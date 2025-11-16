@@ -1,31 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Pokédex
+
+A modern Pokédex application built with Next.js, TypeScript, and Tailwind CSS. Browse and explore Pokémon data with a clean, responsive interface.
+
+## Features
+
+- Browse Pokémon with pagination
+- View detailed Pokémon information
+- Responsive design with Tailwind CSS
+- TypeScript for type safety
+- Clean and modern UI
 
 ## Getting Started
 
-First, run the development server:
+First, install dependencies:
 
 ```bash
+bun install
+# or
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+Then, run the development server:
+
+```bash
+bun run dev
+# or
 npm run dev
 # or
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `app/` - Next.js app router pages and components
+- `app/components/` - React components for the Pokédex UI
+- `lib/` - Utility functions, hooks, and TypeScript types
+- `lib/hooks/` - Custom React hooks for data fetching
+- `lib/types/` - TypeScript type definitions
+- `public/` - Static assets
+
+## Tech Stack
+
+- **Framework**: [Next.js](https://nextjs.org) 16.0.2
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS v4
+- **Runtime**: Bun (recommended)
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+To learn more about the technologies used:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs) - learn about the utility-first CSS framework
+- [TypeScript Documentation](https://www.typescriptlang.org/docs/) - learn about TypeScript
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
