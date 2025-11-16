@@ -23,12 +23,12 @@ const PokeCard: React.FC<{ pokemonList: Pokemon[] }> = ({ pokemonList }) => {
 
             {/* Card Content */}
             <div className="card-content">
-              <h2 className="pokemon-name">{capitalFirst(pokemon.name)}</h2>
+              <h2 className="pokemon-name capitalize">{pokemon.name}</h2>
 
               <div className="pokemon-type-container">
                 {pokemon.types.map((type, index) => (
-                  <div className="pokemon-type" key={index}>
-                    <span className="pokemon-type-name">{capitalFirst(type.type.name)}</span>
+                  <div className="pokemon-type capitalize" key={index}>
+                    <span className="pokemon-type-name">{type.type.name}</span>
                   </div>
                 ))}
               </div>

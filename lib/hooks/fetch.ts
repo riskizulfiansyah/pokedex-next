@@ -1,8 +1,7 @@
 import { POKEAPI_BASE_URL } from "@/lib/config";
-import { BasicResource } from "@/lib/types/type";
-import { Pokemon, PokemonDetail } from "@/lib/types/pokemon";
+import { PokemonDetail } from "@/lib/types/pokemon";
 import { PokemonListResponse } from "@/lib/types/pokemon";
-import { PokemonSpecies } from "../types/species";
+import { PokemonSpecies } from "@/lib/types/species";
 
 // Simple in-memory cache
 const cache = new Map<string, any>();

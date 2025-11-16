@@ -1,7 +1,7 @@
 @reference "./globals.css";
 
 .pokedex-container {
-    @apply min-h-screen bg-gradient-to-br from-gray-50 to-gray-100;
+    @apply min-h-screen relative;
 }
 
 .pokedex-header {
@@ -17,7 +17,11 @@
 }
 
 .pokedex-title {
-    @apply text-3xl md:text-4xl font-bold text-gray-800 p-4;
+    @apply text-3xl lg:text-4xl font-bold text-gray-800 p-4;
+}
+
+.pokedex-title.detail {
+    @apply p-0 text-white;
 }
 
 .pokemon-grid {
@@ -37,6 +41,10 @@
     @apply text-lg lg:text-xl font-bold text-gray-100/40;
 }
 
+.pokemon-id.detail {
+    @apply text-white text-xl lg:text-2xl;
+}
+
 .card-content {
     @apply relative z-10 flex flex-col gap-1
 }
@@ -51,6 +59,10 @@
 
 .pokemon-type {
     @apply bg-white/30 px-3 rounded-full backdrop-blur w-fit;
+}
+
+.pokemon-type.detail {
+    @apply text-white;
 }
 
 .pokemon-type-name {
@@ -70,4 +82,20 @@
     @apply transition-all duration-200;
     @apply flex items-center justify-center;
     @apply z-10;
+}
+
+.pokemon-detail-image {
+    @apply w-66 h-66 lg:w-46 lg:h-46;
+}
+
+.tab-options {
+    @apply px-6 pt-6 pb-4 text-xs lg:text-base font-medium transition-colors relative;
+}
+
+.tabbed-container {
+    @apply w-full bg-white px-2 md:px-6 py-1 md:py-6 rounded-t-4xl;
+}
+
+.tabbed-content-container {
+    @apply h-[40dvh] max-h-[300px] overflow-y-auto px-6 py-4;
 }

@@ -12,6 +12,6 @@ export const POKEMON_COLORS: Record<string, string> = {
     purple: 'bg-purple-400',
     red: 'bg-red-400',
     white: 'bg-slate-300',
-    yellow: 'bg-yellow-400',
+    yellow: 'bg-yellow-500',
     default: 'bg-slate-300' // Default color if no color is found
 }

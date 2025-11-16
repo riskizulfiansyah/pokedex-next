@@ -1,11 +1,9 @@
 'use client'
-
-import "@/app/styles/pokedex.css";
 import PokeCard from "./PokeCard";
 import { usePokemonList } from "@/lib/hooks/usePokemonList";
 import { useEffect, useRef, useState } from "react";
 import { PAGINATION_LIMIT } from "@/lib/config";
-import { Pokemon } from "@/lib/types/pokemon";
+import Header from "./Header";
 
 const Pokedex: React.FC = () => {
     const [offset, setOffset] = useState(0);
@@ -51,21 +49,7 @@ const Pokedex: React.FC = () => {
     return (
         <div className="pokedex-container">
             {/* Header */}
-            <header className="pokedex-header">
-                <div className="flex items-center justify-between">
-                    <button className="header-button" aria-label="Go back">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                        </svg>
-                    </button>
-
-                    <button className="header-button" aria-label="Menu">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                    </button>
-                </div>
-            </header>
+            <Header />
             <h1 className="pokedex-title">Pokedex</h1>
 
             {/* Grid Container */}

@@ -138,4 +138,14 @@ export type Pokemon = {
     cries?: PokemonCries;
     color?: string;
     species_detail?: PokemonSpecies;
+    egg_groups?: string;
+    gender?: {
+        male: string,
+        female: string
+    };
+    stats_detail?: {
+        name: string,
+        base_state: number,
+        effort: number
+    }[]
 };
